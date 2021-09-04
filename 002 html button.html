@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HTML Button</title>
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+		<!--<button type="button" onclick="alert('Hello World!')">Click Me!</button>-->	<!-- 함수를 직접 담을 경우. -->
+		<button type="button" onclick="testFucntion()">Click Me!</button>				<!-- 함수를 외부에서 정의하여 호출할 경우. -->
+		<button type="button" onclick="alert('Clicked Naver Logo!')">
+			<img src="local_images/naver_logo.png" alt="naver logo" width="50" height="50">
+		</button>
+		
+		<!-- button과 input의 차이. -->
+		<!-- button의 경우, button 내부에 <i>, <strong>, <br>, <img> 등의 tag를 넣을 수 있지만,
+			input의 경우 tag를 추가로 넣을 수 없다. -->
+		
+		<script>
+			function testFucntion() {
+				alert("Hello World!");
+			}
+		</script>
+	</body>
+</html>

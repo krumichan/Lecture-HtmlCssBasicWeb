@@ -1,0 +1,80 @@
+<!-- <b></b> 			: bold 										-->
+<!-- <strong></strong> 	: bold + 중요 내용일 경우 사용. 					-->
+<!-- <i></i> 			: italic 										-->
+<!-- <h1> ~ <h6> 		: heading -- 줄바꿈과 굵기를 포함하고 있다.			-->
+<!-- <u></u> 			: under line 									-->
+<!-- </br>(<br>)		: Line Breaker								-->
+<h1>우지의 소속팀 <i>로얄 네비 기브업</i>은 공식 SNS를 통해</h1> "<u>우지</u>가 스프링 시즌 <b>종료</b> 후, </br></br> <strong>건강 문제</strong>를 이유로 은퇴 의사를 전했다.
+
+
+<!-- <p></p>			: paragraph ( 전후로 한줄 띄움. -- 단락을 나타냄(★) )	-->
+<p>
+	INTRO: 시작에 대한 궁시렁~~
+</p>
+
+<p>
+	MAIN 핵심 내용.
+</p>
+
+
+<!-- <img />			: image.  'alt': image 없을 경우 띄울 Text			-->
+<img src="local_images/img_girl.jpg" alt="Girl in a jacket" width="500" height="600"/>
+
+
+<!-- <a ></a>			: 임의의 web을 향한 link를 띄움.					-->
+<a href="https://www.naver.com">NAVER 보기</a>
+<a href="https://www.naver.com" target="_blank">NAVER 새창 보기</a>
+<a href="https://www.naver.com" target="_blank">
+	<img src="local_images/naver_logo.png" alt="NAVER LOG" width="50" height="50"/>
+</a>
+
+
+
+<!-- <ol></ol>			: Ordered List      -- 자동으로 번호가 매겨진다.		-->
+<p>당신이 가장 좋아하는 언어는?</p>
+<ol>
+	<li>C++</li>
+	<li>C#</li>
+	<li>Javascript</li>
+	<li>Python</li>
+</ol>
+
+<!-- <ul></ul>			: Unordered List  -- 작은 동그라미만 생긴다.			-->
+<p>당신이 가장 좋아하는 게임은?</p>
+<ul>
+	<li>MMORPG</li>
+	<li>FPS</li>
+	<li>RTS</li>
+</ul>
+
+
+<style>
+	table, th, td {
+		border: 1px solid black;
+	}
+</style>
+<!-- table 생성 -->
+<!-- tr: table row,  th: table header,  td: table data -->
+<!-- tag를 통한 grouping
+	<thead></thead> : Table의 최상단.
+	<tbody></tbody> : Table의 중간부.
+	<tfoot></tfoot> : Table의 최하단.
+ -->
+<table>
+	<tr>
+		<th>Month</th>
+		<th>Savings</th>
+	</tr>
+	
+	<tr>
+		<td>January</td>
+		<td>$100</td>
+	</tr>
+	
+	<tr>
+		<td>February</td>
+		<td>$80</td>
+	</tr>
+</table>
+
+<!-- WEB의 경우, 오타 등으로 인한 error가 발생해도, error가 발생한 태그를 출력을 해준다. -->
