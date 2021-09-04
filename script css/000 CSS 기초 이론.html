@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			/* 1. element selector: 임의의 element 전체에 적용. */
+			p {
+				text-align: center;
+				color: red;
+			}
+			
+			/* 2. id selector: 임의의 id 값을 가진 모든 element에 적용. */
+			#custom {
+				text-align: center;
+				color: blue;
+			}
+			
+			/* 3. class selector: 임의의 class 값을 가진 모든 element에 적용. */
+			.cls {
+				text-align: center;
+				color: green;
+			}
+			
+			/* 4. all selector: 모든 element에 적용. */
+			* {
+				font-weight: bold;
+			}
+			
+			/* grouped selector: 여러 element에 적용. */
+			h1, h2, h3 {
+				text-align: center;
+				color: grey;
+				border-bottom: 1px solid red;
+				padding-bottom: 10px /* 줄과 h1/h2/h3 글자의 거리 */
+			}
+			
+			/* div test */
+			div {
+				background-color: lightgrey;
+				width: 200px;
+				border: 15px solid green;
+				padding: 50px; /* div 내부에서 글자와의 거리 */
+				margin: 20px; /* div 외부에서 다른 element와의 거리 */
+		</style>
+	</head>
+	
+	<body>
+		<!-- <span></span> : text의 일부에 color를 주기 위한 요소  -->
+		<h1><span style="color:blue; font-weight:bold">우지</span>의 소속팀 로얄 네버 기브업은 공식 SNS를 통해</h1> "우지가
+		<!-- 위의 문장의 문제.
+		   1. content tag(h1 등)과 style을 위한 tag(span 등)이 같이 섞여버린다.
+		   2. 여러 부분에 같은 style을 적용하고 싶을 경우(즉 재활용할 경우),
+		       코드 중복이 잔뜩 발생할 수 있다.
+		       ⇒ 즉, 일괄 동시 처리에 큰 문제가 발생할 수 있다.
+		-->
+		
+		<label style="color:blue; font-weight:bold">
+			span을 사용하지 않고, 직접 임의의 element에 style을 넣을 수 있다. </br>
+			그래도 span을 사용하는 이유는, span은 style만을 위한 소소한 범위를 정해줄 수 있다.
+		</label>
+		
+		<p>
+			임의의 element 전체( 이 경우, 모든 p element )에 style을 적용.
+		</p>
+		
+		<label id="custom">
+			임의의 id( 이 경우, id="custom"를 가진 모든 element )에 style을 적용.
+		</label>
+		
+		<span class="cls">
+			임의의 class( 이 경우, class="cls"를 가진 모든 element )에 style을 적용.
+		</span>
+		
+		<div>
+			해당 영역은 content 영역이다.
+		</div>
+	</body>
+</html>
